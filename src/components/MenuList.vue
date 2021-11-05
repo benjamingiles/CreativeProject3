@@ -28,9 +28,12 @@
         },
         methods: {
             addToCart(product) {
+                console.log("In AddToCart")
+                console.log(product)
                 this.$root.$data.cart.push(product);
             },
-        }
+        },
+        
     }
 </script>
 
@@ -112,6 +115,20 @@ button {
   background: #000;
   color: white;
   border: none;
+}
+
+button:hover,
+button:focus {
+  background: gray;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
 }
 
 .auto {
