@@ -9,12 +9,12 @@
     <div id="side">
       <router-link to="/menu">
         <div class="menu-item browse">
-          <p>Order</p>
+          <button type="button" name="button">Order</button>
         </div>
       </router-link>
       <router-link to="/checkout">
         <div class="menu-item">
-          <p>Checkout</p>
+          <button type="button" name="button">Checkout</button>
         </div>
       </router-link>
     </div>
@@ -41,7 +41,7 @@ body {
 }
 
 #menu a {
-  color: #B84901;
+  color: #B8860B;
 }
 
 #brand {
@@ -58,6 +58,7 @@ body {
   grid-area: side;
   display: flex;
   justify-content: flex-end;
+  margin: 50px;
 }
 
 #side img {

@@ -1,18 +1,15 @@
 <template>
 <dir class="wrapper">
-  <div class="products">
-    <div class="product" v-for="product in products" :key="product.id">
+  <div class="specials">
+    <div class="special" v-for="special in specials" :key="special.id">
       <div class="info-name">
-        <h1>{{product.name}}</h1>
-        <h3>{{product.calories}} kcal</h3>
+        <h1>{{special.name}}</h1>
+        <h3>{{special.calories}} kcal</h3>
       </div>
       <div class="image">
-        <img :src=product.image>
+        <img :src=special.image>
       </div>
-      <div class="info-others">
-        <h2>{{product.price}}</h2>
-        <button v-on:click="addToCart(product)" class="auto">Add to Order</button>
-      </div>
+
     </div>
   </div>
 </dir>
@@ -22,16 +19,9 @@
 
 <script>
 export default {
-  name: 'MenuList',
+  name: 'HomeSpecial',
   props: {
-    products: Array
-  },
-  methods: {
-    addToCart(product) {
-      console.log("In AddToCart")
-      console.log(product)
-      this.$root.$data.cart.push(product);
-    },
+    specials: Array
   },
 
 }
@@ -49,21 +39,21 @@ export default {
   padding-left: 0;
 }
 
-.products {
+.specials {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.product {
+.special {
   margin: 10px;
   margin-top: 10px;
   margin-bottom: 40px;
   width: 200px;
 }
 
-.product img {
+.special img {
   border: 2px solid #333;
   height: 250px;
   width: 200px;
@@ -71,7 +61,7 @@ export default {
   object-fit: cover;
 }
 
-.product .image {
+.special .image {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
