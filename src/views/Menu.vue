@@ -1,20 +1,19 @@
 
 <template>
 <div>
-  <div class="info">
-    <p>Menu page</p>
-  </div>
+  <MenuHeader />
   <MenuList :products="products" />
 </div>
 </template>
 
-
 <script>
 import MenuList from "../components/MenuList.vue"
+import MenuHeader from "../components/MenuHeader.vue"
 export default {
   name: 'Menu',
   components: {
-    MenuList
+    MenuList,
+    MenuHeader
   },
   computed: {
     products() {
@@ -23,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  margin: 0px;
+}
+</style>

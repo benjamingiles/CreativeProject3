@@ -23,14 +23,13 @@
 </div>
 </template>
 
-<style>
+<style scoped>
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 50px 100px;
-
 }
 
 #menu {

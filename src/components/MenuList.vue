@@ -13,7 +13,7 @@
                     <h2>{{product.price}}</h2>
                     <button v-on:click="addToCart(product)" class="auto">Add to Cart</button>
                 </div>
-            </div>
+            </div>  
         </div>
     </dir>
 </template>
@@ -41,6 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-left: 0;
 }
 
 .products {
@@ -52,7 +55,8 @@
 
 .product {
   margin: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   width: 200px;
 }
 
