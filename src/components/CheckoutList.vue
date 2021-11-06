@@ -1,7 +1,7 @@
 <template>
 <dir class="wrapper">
   <div class="products">
-    <div class="product" v-for="product in products" :key="product.id">
+    <div class="product" v-for="(product, index) in products" :key="product.id">
       <div class="info-name">
         <h1>{{product.name}}</h1>
         <h3>{{product.calories}} kcal</h3>
@@ -11,7 +11,7 @@
       </div>
       <div class="info-others">
         <h2>${{product.price}}</h2>
-        <button v-on:click="addToCart(product)" class="auto">Add to Order</button>
+        <button v-on:click="removeCart(index)" class="auto">Remove from Order</button>
       </div>
     </div>
   </div>
@@ -27,11 +27,9 @@ export default {
     products: Array
   },
   methods: {
-    addToCart(product) {
-      console.log("In AddToCart")
-      console.log(product)
-      this.$root.$data.cart.push(product);
-    },
+    removeCart(index) {
+      this.$root.$data.cart.splice(index, 1);
+    }
   },
 
 }

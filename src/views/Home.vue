@@ -4,9 +4,10 @@
   <HomeSpecial :specials="specials" />
   <router-link to="/menu">
     <div class="menu-item browse">
-      <button type="button" name="button">Order</button>
+      <button class="order">Order Now</button>
     </div>
   </router-link>
+  <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
 </div>
 </template>
 
@@ -26,3 +27,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.order {
+  justify-content: center;
+  margin: 40px;
+  margin-top: 70px;
+  text-align: center;
+  background-color: #B8860B;
+  font-size: 24px;
+  color: white;
+}
+</style>

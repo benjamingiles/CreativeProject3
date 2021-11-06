@@ -3,6 +3,7 @@
 <div>
   <MenuHeader />
   <MenuList :products="products" />
+  <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
 </div>
 </template>
 
