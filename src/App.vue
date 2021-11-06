@@ -28,16 +28,20 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 body {
   margin: 50px 100px;
 }
 
 #menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-template-areas: "brand none side";
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 #menu a {
@@ -48,7 +52,7 @@ body {
   grid-area: brand;
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin-top: 50px;
 }
 
 #brand img {
@@ -68,6 +72,7 @@ body {
 .menu-item {
   display: flex;
   flex-direction: column;
+  margin-right: 100px;
 }
 
 .menu-item p {

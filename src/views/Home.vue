@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style>
+.menu-item{
+  text-align: center;
+}
+
 .order {
   justify-content: center;
   margin: 40px;
