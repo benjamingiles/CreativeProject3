@@ -9,6 +9,7 @@
   </router-link>
   <div class="github">
     <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
+    <p>Ben Giles & Kurumi Asano</p>    
   </div>
 </div>
 </template>

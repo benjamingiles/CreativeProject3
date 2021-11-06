@@ -3,7 +3,10 @@
 <div>
   <MenuHeader />
   <MenuList :products="products" />
-  <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
+  <div class="github">
+    <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
+    <p>Ben Giles & Kurumi Asano</p>    
+  </div>   
 </div>
 </template>
 
@@ -25,6 +28,10 @@ export default {
 </script>
 
 <style>
+.menu-item{
+  text-align: center;
+}
+
 body {
   margin: 0px;
 }
