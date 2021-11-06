@@ -7,7 +7,9 @@
       <button class="order">Order Now</button>
     </div>
   </router-link>
-  <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
+  <div class="github">
+    <a href="https://github.com/benjamingiles/CreativeProject3.git">Github</a>
+  </div>
 </div>
 </template>
 
@@ -41,5 +43,15 @@ export default {
   background-color: #B8860B;
   font-size: 24px;
   color: white;
+}
+
+.github {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a {
+  font-size: 30px;
 }
 </style>
